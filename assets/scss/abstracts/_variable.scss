@@ -1,0 +1,17 @@
+// SCSS Variable's
+$color-primary: var(--color-primary);
+$color-black:#000000;
+$color-white:#ffffff;
+
+$color-blue:#595eef;
+$color-pink:#ff4f7c;
+
+$font-primary: var(--font-primary);
+$font-secondary: var(--font-secondary);
+
+/* CSS Variable's */
+:root{
+    --color-primary: #ffd700;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Universo', sans-serif;
+}
