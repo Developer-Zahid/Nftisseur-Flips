@@ -78,16 +78,15 @@
         arrows: true,
         prevArrow: '<button class="slick__arrows slick__arrows--left border-0 d-inline-flex align-items-center justify-content-center"><i class="bi bi-chevron-left"></i></button>',
 		nextArrow: '<button class="slick__arrows slick__arrows--right border-0 d-inline-flex align-items-center justify-content-center"><i class="bi bi-chevron-right"></i></button>',
-        dots: false,
+        dots: true,
         pauseOnHover: false,
         pauseOnFocus: false,
-        infinite: true,
+        infinite: false,
 		responsive: [
 			{
 				breakpoint: 768,
 				settings: {
 					slidesToShow: 1,
-					dots: true
 				}
 			},
 		]
