@@ -2,12 +2,15 @@
 .primary-btn{
 	display: inline-block;
 	color: $color-black;
-	font-size: toRem(18);
 	font-family: $font-primary;
 	font-weight: 500;
 	padding: 0.7em 1.4em;
 	background: $color-primary;
+	border: 0;
 	@extend %transition;
+	@include min-tablet{
+		font-size: toRem(18);
+	}
 	&:hover, 
 	&:focus{
 		color: $color-primary;

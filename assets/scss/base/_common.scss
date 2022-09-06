@@ -316,6 +316,11 @@ img{
 /* Banner Section Style */
 .banner{
 	padding: toEm(100) 0;
+	background-color: $color-blue;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: overlay;
+	color: $color-white;
 	@include mobile{
 		padding: toEm(60) 0;
 	}
@@ -570,5 +575,73 @@ img{
 				margin-bottom: toRem(3);
 			}
 		}
+	}
+}
+
+.contact{
+	background-color: $color-gray--light;
+}
+
+.form{
+	border-top: 6px solid $color-pink;
+	border-bottom: 4px solid $color-pink;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: $color-white;
+	padding: toRem(50) toRem(20);
+	@include min-tablet{
+		padding-left: toRem(80);
+		padding-right: toRem(80);
+	}
+
+	&-label{
+		font-weight: 700;
+	}
+
+	&-control{
+		box-shadow: none !important;
+		min-height: toRem(48);
+		&:focus{
+			border-color: $color-blue;
+		}
+	}
+
+	&-group{
+		.alert{
+			margin-top: toRem(10);
+		}
+	}
+
+	&-image{
+		max-height: toRem(40);
+		user-select: none;
+		pointer-events: none;
+	}
+}
+
+.alert{
+	font-size: toRem(14);
+	font-weight: 600;
+	&-danger{
+		color: $color-danger;
+		background-color: rgba($color-danger, $alpha: 0.12);
+	}
+}
+
+.step-block{
+	padding: 10px 15px;
+	font-weight: 700;
+	border-radius: 5px;
+	text-align: center;
+	@include min-tablet{
+		font-size: toRem(18);
+	}
+	&--blue{
+		color: $color-white;
+		background-color: $color-blue;
+	}
+	&--pink{
+		color: $color-white;
+		background-color: $color-pink;
 	}
 }

@@ -523,6 +523,11 @@ img {
 /* Banner Section Style */
 .banner {
   padding: 6.25em 0;
+  background-color: #595eef;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #ffffff;
 }
 
 @media (max-width: 575.98px) {
@@ -871,6 +876,86 @@ img {
   margin-bottom: 0.1875rem;
 }
 
+.contact {
+  background-color: #ececec;
+}
+
+.form {
+  border-top: 6px solid #ff4f7c;
+  border-bottom: 4px solid #ff4f7c;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #ffffff;
+  padding: 3.125rem 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .form {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.form-label {
+  font-weight: 700;
+}
+
+.form-control {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  min-height: 3rem;
+}
+
+.form-control:focus {
+  border-color: #595eef;
+}
+
+.form-group .alert {
+  margin-top: 0.625rem;
+}
+
+.form-image {
+  max-height: 2.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.alert {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.alert-danger {
+  color: #EA5455;
+  background-color: rgba(234, 84, 85, 0.12);
+}
+
+.step-block {
+  padding: 10px 15px;
+  font-weight: 700;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .step-block {
+    font-size: 1.125rem;
+  }
+}
+
+.step-block--blue {
+  color: #ffffff;
+  background-color: #595eef;
+}
+
+.step-block--pink {
+  color: #ffffff;
+  background-color: #ff4f7c;
+}
+
 /* Common Transition Style */
 .slick-dots li button, .primary-btn, .header .navbar-toggler, .header .navbar .nav-link, .header .navbar .nav-icon, .footer--social__icon, .footer__copyright__link {
   -webkit-transition: all ease-in-out .3s;
@@ -884,11 +969,17 @@ img {
 .primary-btn {
   display: inline-block;
   color: #000000;
-  font-size: 1.125rem;
   font-family: var(--font-primary);
   font-weight: 500;
   padding: 0.7em 1.4em;
   background: var(--color-primary);
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  .primary-btn {
+    font-size: 1.125rem;
+  }
 }
 
 .primary-btn:hover, .primary-btn:focus {
